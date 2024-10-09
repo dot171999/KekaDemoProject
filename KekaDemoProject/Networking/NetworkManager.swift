@@ -18,7 +18,7 @@ class NetworkManager: NetworkManagerProtocol {
     }
     
     func getData(from url: URL) async throws -> Data {
-        let (data, urlResponse) = try await session.data(from: url)
+        let (data, _) = try await session.data(from: url)
         return data
     }
     
