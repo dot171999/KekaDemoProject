@@ -10,21 +10,23 @@ import Foundation
 extension ContentView {
     @Observable
     final class ViewModel {
-        var articles: [Article] = []
-        
         private let articleService: ArticleServiceProtocol
+        private(set) var articles: [Article] = []
+        private(set) var isLoading: Bool = false
         
         init(articleService: ArticleServiceProtocol = ArticleService()) {
             self.articleService = articleService
         }
         
-        func fetchArticles() async {
+        func loadArticles() async {
+            isLoading = true
             do {
-                let articles = try await articleService.fetchArticles()
-                self.articles = articles
+                self.articles = try await articleService.getAndSaveArticles(from: APIEndpoint.Get.articles.urlString)
+                
             } catch {
-                print("Error: ", error.localizedDescription)
+                self.articles = articleService.loadSavedArticles()
             }
+            isLoading = false
         }
     }
 }

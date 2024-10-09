@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct KekaDemoProjectApp: App {
-    let coreDataStack = CoreDataStack.shared
-
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 ContentView()
-                    .environment(\.managedObjectContext, coreDataStack.container.viewContext)
             }
         }
     }

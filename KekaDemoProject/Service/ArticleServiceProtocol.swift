@@ -8,6 +8,9 @@
 import Foundation
 
 protocol ArticleServiceProtocol: AnyObject {
-    func fetchArticles() async throws -> [Article]
-    func loadImageData(from url: String, id: String) async throws -> Data?
+    func getAndSaveArticles(from urlString: String) async throws -> [Article]
+    func getAndSaveImageData(from url: String, for articleId: String) async throws -> Data?
+    func save(_ articles: [Article], in contextType: MOContext) async throws
+    func loadSavedArticles() -> [Article]
+    func loadImageDataforArticle(id: String) async -> Data?
 }

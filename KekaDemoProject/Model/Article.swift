@@ -7,14 +7,6 @@
 
 import Foundation
 
-struct ArticleSearch: Decodable {
-    let response: ArticleResponse
-}
-
-struct ArticleResponse: Decodable {
-    let docs: [Article]
-}
-
 struct Article: Decodable, Identifiable {
     let id: String
     let headline: Headline
@@ -44,6 +36,14 @@ struct Article: Decodable, Identifiable {
             return ""
         }
     }
+}
+
+struct ArticleSearch: Decodable {
+    let response: ArticleResponse
+}
+
+struct ArticleResponse: Decodable {
+    let docs: [Article]
 }
 
 struct Headline: Codable {

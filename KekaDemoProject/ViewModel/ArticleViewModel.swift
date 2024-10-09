@@ -19,13 +19,14 @@ extension ArticleView {
             self.articleService = articleService
         }
         
-        func loadImage(from url: String, articleId: String) async {
-            if image != nil { return }
-            if let data = CoreDataStack.shared.loadImageDataforArticle(id: articleId) {
+        func loadImage(from url: String, for articleId: String) async {
+            guard image == nil else { return }
+            
+            if let data = await articleService.loadImageDataforArticle(id: articleId) {
                 image = UIImage(data: data)
             } else {
                 do {
-                    if let data = try await articleService.loadImageData(from: url, id: articleId) {
+                    if let data = try await articleService.getAndSaveImageData(from: url, for: articleId) {
                         image = UIImage(data: data)
                     }
                 } catch {

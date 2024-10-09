@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.colorScheme) private var colorScheme
     @State private var viewModel = ViewModel()
     
     var body: some View {
@@ -18,16 +18,25 @@ struct ContentView: View {
                 ForEach (viewModel.articles) { article in
                     ArticleView(article: article)
                         .frame(maxWidth: .infinity)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(colorScheme == .dark ? .white : .black)
                 }
             }
             .padding(.horizontal)
         }
+        .overlay{
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .controlSize(.large)
+                    .tint(.red)
+            }
+        }
         .task {
-            await viewModel.fetchArticles()
+            await viewModel.loadArticles()
         }
         .navigationTitle("Articles")
-        .background(.gray)
+        .background(colorScheme == .dark ? .black : .gray)
     }
 }
+
 

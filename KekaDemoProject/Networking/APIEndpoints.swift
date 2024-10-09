@@ -7,10 +7,17 @@
 
 import Foundation
 
-enum APIEndpoint {
+struct APIEndpoint {
+    static let baseURL = "https://api.nytimes.com/"
     
     enum Get {
-        static let articles = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=j5GCulxBywG3lX211ZAPkAB8O381S5SM"
+        case articles
+        
+        var urlString: String {
+            switch self {
+            case .articles:
+                return "\(APIEndpoint.baseURL)svc/search/v2/articlesearch.json?q=election&api-key=j5GCulxBywG3lX211ZAPkAB8O381S5SM"
+            }
+        }
     }
-
 }
