@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct KekaDemoProjectApp: App {
-    let persistenceController = PersistenceController.shared
+    let coreDataStack = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack {
+                ContentView()
+                    .environment(\.managedObjectContext, coreDataStack.container.viewContext)
+            }
         }
     }
 }

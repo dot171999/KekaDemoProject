@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92943E9B2CB67C6C00763691 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92943E9A2CB67C6C00763691 /* ArticleView.swift */; };
+		92943E9F2CB6B90A00763691 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92943E9E2CB6B90A00763691 /* ArticleViewModel.swift */; };
+		929DF5F92CB64C1100A9655D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF5F82CB64C1100A9655D /* Article.swift */; };
+		929DF5FC2CB6512100A9655D /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF5FB2CB6512100A9655D /* APIEndpoints.swift */; };
+		929DF5FF2CB653B100A9655D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF5FE2CB653B100A9655D /* NetworkManager.swift */; };
+		929DF6012CB654B100A9655D /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF6002CB654B100A9655D /* NetworkManagerProtocol.swift */; };
+		92F0FDDF2CB66247003A2778 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0FDDE2CB66247003A2778 /* ArticleService.swift */; };
+		92F0FDE12CB6625B003A2778 /* ArticleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0FDE02CB6625B003A2778 /* ArticleServiceProtocol.swift */; };
 		92F785A02CB6410300FDE4EB /* KekaDemoProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7859F2CB6410300FDE4EB /* KekaDemoProjectApp.swift */; };
 		92F785A22CB6410300FDE4EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785A12CB6410300FDE4EB /* ContentView.swift */; };
 		92F785A42CB6411300FDE4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F785A32CB6411300FDE4EB /* Assets.xcassets */; };
 		92F785A72CB6411300FDE4EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F785A62CB6411300FDE4EB /* Preview Assets.xcassets */; };
-		92F785A92CB6411300FDE4EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785A82CB6411300FDE4EB /* Persistence.swift */; };
+		92F785A92CB6411300FDE4EB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785A82CB6411300FDE4EB /* CoreDataStack.swift */; };
 		92F785AC2CB6411300FDE4EB /* KekaDemoProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92F785AA2CB6411300FDE4EB /* KekaDemoProject.xcdatamodeld */; };
 		92F785B62CB6411300FDE4EB /* KekaDemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785B52CB6411300FDE4EB /* KekaDemoProjectTests.swift */; };
 		92F785C02CB6411300FDE4EB /* KekaDemoProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785BF2CB6411300FDE4EB /* KekaDemoProjectUITests.swift */; };
 		92F785C22CB6411300FDE4EB /* KekaDemoProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785C12CB6411300FDE4EB /* KekaDemoProjectUITestsLaunchTests.swift */; };
+		92F785CF2CB6455D00FDE4EB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F785CE2CB6455D00FDE4EB /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +45,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92943E9A2CB67C6C00763691 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		92943E9E2CB6B90A00763691 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		929DF5F82CB64C1100A9655D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		929DF5FB2CB6512100A9655D /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		929DF5FE2CB653B100A9655D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		929DF6002CB654B100A9655D /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		92F0FDDE2CB66247003A2778 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		92F0FDE02CB6625B003A2778 /* ArticleServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceProtocol.swift; sourceTree = "<group>"; };
 		92F7859C2CB6410300FDE4EB /* KekaDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KekaDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F7859F2CB6410300FDE4EB /* KekaDemoProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekaDemoProjectApp.swift; sourceTree = "<group>"; };
 		92F785A12CB6410300FDE4EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92F785A32CB6411300FDE4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F785A62CB6411300FDE4EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		92F785A82CB6411300FDE4EB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		92F785A82CB6411300FDE4EB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		92F785AB2CB6411300FDE4EB /* KekaDemoProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KekaDemoProject.xcdatamodel; sourceTree = "<group>"; };
 		92F785B12CB6411300FDE4EB /* KekaDemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KekaDemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F785B52CB6411300FDE4EB /* KekaDemoProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekaDemoProjectTests.swift; sourceTree = "<group>"; };
 		92F785BB2CB6411300FDE4EB /* KekaDemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KekaDemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F785BF2CB6411300FDE4EB /* KekaDemoProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekaDemoProjectUITests.swift; sourceTree = "<group>"; };
 		92F785C12CB6411300FDE4EB /* KekaDemoProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekaDemoProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92F785CE2CB6455D00FDE4EB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92943E9C2CB6B8D100763691 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92F785A12CB6410300FDE4EB /* ContentView.swift */,
+				92943E9A2CB67C6C00763691 /* ArticleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92943E9D2CB6B8DC00763691 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92F785CE2CB6455D00FDE4EB /* ContentViewModel.swift */,
+				92943E9E2CB6B90A00763691 /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		929DF5F32CB64BEA00A9655D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				92F785A82CB6411300FDE4EB /* CoreDataStack.swift */,
+				92F785AA2CB6411300FDE4EB /* KekaDemoProject.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		929DF5FD2CB6537700A9655D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				929DF6002CB654B100A9655D /* NetworkManagerProtocol.swift */,
+				929DF5FE2CB653B100A9655D /* NetworkManager.swift */,
+				929DF5FB2CB6512100A9655D /* APIEndpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		92F0FDDD2CB6620E003A2778 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				92F0FDE02CB6625B003A2778 /* ArticleServiceProtocol.swift */,
+				92F0FDDE2CB66247003A2778 /* ArticleService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		92F785932CB6410300FDE4EB = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +163,13 @@
 			isa = PBXGroup;
 			children = (
 				92F7859F2CB6410300FDE4EB /* KekaDemoProjectApp.swift */,
-				92F785A12CB6410300FDE4EB /* ContentView.swift */,
+				929DF5FD2CB6537700A9655D /* Networking */,
+				92F0FDDD2CB6620E003A2778 /* Service */,
+				929DF5F32CB64BEA00A9655D /* CoreData */,
+				92F785D02CB6462C00FDE4EB /* Model */,
+				92943E9C2CB6B8D100763691 /* View */,
+				92943E9D2CB6B8DC00763691 /* ViewModel */,
 				92F785A32CB6411300FDE4EB /* Assets.xcassets */,
-				92F785A82CB6411300FDE4EB /* Persistence.swift */,
-				92F785AA2CB6411300FDE4EB /* KekaDemoProject.xcdatamodeld */,
 				92F785A52CB6411300FDE4EB /* Preview Content */,
 			);
 			path = KekaDemoProject;
@@ -131,6 +198,14 @@
 				92F785C12CB6411300FDE4EB /* KekaDemoProjectUITestsLaunchTests.swift */,
 			);
 			path = KekaDemoProjectUITests;
+			sourceTree = "<group>";
+		};
+		92F785D02CB6462C00FDE4EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				929DF5F82CB64C1100A9655D /* Article.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F0FDE12CB6625B003A2778 /* ArticleServiceProtocol.swift in Sources */,
 				92F785AC2CB6411300FDE4EB /* KekaDemoProject.xcdatamodeld in Sources */,
-				92F785A92CB6411300FDE4EB /* Persistence.swift in Sources */,
+				92943E9F2CB6B90A00763691 /* ArticleViewModel.swift in Sources */,
+				92F785A92CB6411300FDE4EB /* CoreDataStack.swift in Sources */,
+				929DF5FF2CB653B100A9655D /* NetworkManager.swift in Sources */,
+				929DF5FC2CB6512100A9655D /* APIEndpoints.swift in Sources */,
+				929DF6012CB654B100A9655D /* NetworkManagerProtocol.swift in Sources */,
+				929DF5F92CB64C1100A9655D /* Article.swift in Sources */,
+				92F0FDDF2CB66247003A2778 /* ArticleService.swift in Sources */,
 				92F785A22CB6410300FDE4EB /* ContentView.swift in Sources */,
 				92F785A02CB6410300FDE4EB /* KekaDemoProjectApp.swift in Sources */,
+				92943E9B2CB67C6C00763691 /* ArticleView.swift in Sources */,
+				92F785CF2CB6455D00FDE4EB /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
