@@ -1,4 +1,4 @@
-## Sample Project 
+## Sample Project (to showcase how I code)
 Fetching and persisting articles from API
 
 * SOLID 
